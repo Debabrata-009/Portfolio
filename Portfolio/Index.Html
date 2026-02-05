@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Debabrata Sahu | Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    html, body { height: 100%; margin: 0;}
+    body {font-family: 'Roboto', sans-serif;background-image:  linear-gradient(rgba(0,0,0,0.65), rgba(0,0,0,0.65)),  url("Background image.jpg");background-repeat: no-repeat;
+          background-size: cover;background-position: center;background-attachment: fixed;color: #fff;}
+    header { background:#1e3a8a; color:#fff; padding:2rem; text-align:center; }
+    header h1 { margin:0; font-size:2.5rem; }
+    header p { margin:0.5rem 0 0; font-size:1.2rem; }
+    nav { background:#0f172a; padding:1rem; text-align:center; }
+    nav a { color:#fff; margin:0 1rem; text-decoration:none; font-weight:bold; }
+    section { padding:3rem 2rem; max-width:1000px; margin:auto; }
+    h2 { color:#00d4ff; margin-bottom:1rem; }
+    .project { background:#0f172a(0 100% 0% / 0.019); padding:1rem; margin-bottom:1.5rem; border-radius:8px; box-shadow:0 2px 5px rgba(0,0,0,0.1); }
+    footer {background: #0f172a; text-align: center; padding: 1rem;}
+    footer p {color: white;font-size: 14px; margin: 0}
+    .skills span { display:inline-block; background:#0f172a; margin:0.3rem; padding:0.5rem 1rem; border-radius:5px; }
+    .contact-icons a { margin:0 0.5rem; color:#1e3a8a; text-decoration:none; font-weight:bold; }
+    #profile-pic { width: 100px; height: 100px; border-radius: 50%; object-fit: cover; border: 3px solid #2563eb; box-shadow: 0 8px 20px rgba(0,0,0,0.25);}
+   .profile-container { display: flex; justify-content: center; align-items: center; padding: 20px;}
+   .header { display: flex;align-items: center;justify-content: center;  gap: 16px; background:#1e3a8a; color:#fff; padding:2rem; text-align:center;}
+   a button { background-color: #00d4ff; color: #000; border: none; padding: 10px 18px; border-radius: 20px; cursor: pointer; font-size: 14px; transition: 0.3s ease;}
+   a button:hover { background-color: #007cf0; color: #fff;}
+   h4 { color:#525252; margin-bottom:1rem; }
+   .contact-icons {display: flex;justify-content: center;gap: 20px;}
+   .contact-icons img {width: 70px;height: 70px;border-radius: 50%; background: black; padding: 12px;object-fit: contain;box-sizing: border-box;}
+   #education {margin-top: 3rem;}
+   .edu-item {  background: rgba(15, 23, 42, 0.85);  padding: 1.2rem;  margin-bottom: 1.5rem;  border-radius: 10px;  box-shadow: 0 4px 10px rgba(0,0,0,0.2);}
+   .edu-item h3 {margin: 0;color: #00d4ff;}
+   .edu-institute {  font-weight: bold; margin: 0.3rem 0;color: white;}
+   .edu-duration {font-size: 0.9rem;color: white;}
+   .edu-details {  margin-top: 0.5rem;  line-height: 1.5;color: white}
+   #education a{ color: #ffffff;  text-decoration: none; }
+   #education a:hover { color: #00d4ff;}
+ </style>
+</head>
+<body>
+ <div class="header">
+  <img src="MY image.jpeg" id="profile-pic" alt="Profile">
+  <div class="text">
+    <h1>Debabrata Sahu</h1>
+    <p>Turning Data into Business Insights</p>
+  </div>
+</div>
+
+  <script>
+  const images = [
+    "My image.jpeg",
+    "My image2.jpeg",
+    "My image3.png"
+  ];
+
+  let index = 0;
+
+  function changeImage() {
+    index = (index + 1) % images.length;
+    document.getElementById("profile-pic").src = images[index];
+  }
+
+  setInterval(changeImage, 3000);
+</script>
+
+  </header>
+  <nav>
+    <a href="#about">About</a>
+    <a href="#projects">Projects</a>
+    <a href="#skills">Skills</a>
+    <a href="#resume">Resume</a>
+    <a href="#contact">Contact</a>
+    <a href="#Education">Education</a>
+  </nav>
+
+  <section id="about">
+    <h2>About Me</h2>
+    <p>Data Analyst with strong knowledge of SQL, Python, Excel, and data visualization tools like Power BI and Tableau. Skilled in data 
+cleaning, exploratory analysis, dashboard creation, and presenting insights clearly. Strong problem-solving abilities, analytical thinking, 
+and eagerness to apply data-driven decision-making in a real-world business environment. Looking for an entry-level role to grow and 
+contribute as a data analyst.</p>
+
+
+  </section>
+
+  <section id="projects">
+    <h2>Projects</h2>
+    <div class="project">
+      <h3>Cross-Selling-Project</h3>
+      <p>The project analyzes United India Insurance Company’s cross‑selling strategy using a dataset of 100,000 customer records. 
+        It involves data cleaning, auditing, and predictive modeling (Logistic Regression, Decision Tree, KNN) to predict customer conversion, improve loyalty, and maximize Customer Lifetime Value.</p>
+      <a href="https://github.com/Debabrata-009/Cross-Selling-Project" target="_blank"><button>Project link</button></a>
+    </div>
+
+     <div class="project">
+      <h3>Customer-Churn-Predication</h3>
+      <p>This project focuses on predicting customer churn using machine learning techniques. 
+        The goal is to identify customers who are likely to stop using a service based on their historical behavior and demographic data. 
+        The model helps businesses take proactive retention measures by analyzing key factors influencing churn.</p>
+      <a href="https://github.com/Debabrata-009/Customer-Churn-Predication" target="_blank"><button>Project link</button></a>
+    </div>
+
+    <div class="project">
+      <h3>Hypothesis-Testing-Project</h3>
+      <p>This project analyzes NYC taxi trip data to examine how payment methods impact fare amounts and driver revenue. 
+        Using data cleaning, exploratory analysis, hypothesis testing, and regression techniques, it identifies patterns showing higher fares for card payments and provides insights to optimize revenue strategies for taxi drivers.</p>
+      <a href="https://github.com/Debabrata-009/Hypothesis-Testing-Project" target="_blank"><button>Project link</button></a>
+    </div>
+
+    <div class="project">
+      <h3>Interactive Tableau sales Dashboard</h3>
+      <p>This Tableau dashboard delivers an interactive sales performance analysis by comparing current year and previous year metrics.
+         It includes KPI indicators, sub-category-wise sales and profit comparisons, weekly trend analysis with average benchmarks, and dynamic filters to help identify growth patterns and underperforming areas.</p>
+      <img src="Image-Icons/Dashboard1.png" alt="Tableau Dashboard Screenshot"width="100%" height="auto">
+    </div>
+    <div class="project">
+      <h3>Interactive Power BI HR Dashboard</h3>
+      <p>This Power BI dashboard provides an interactive overview of HR analytics, displaying key KPIs such as headcount, active and terminated employees, gender distribution, and performance metrics. 
+        Using dynamic slicers and visualizations, it enables data-driven insights into workforce trends, recruitment channels, and employee satisfaction.</p>
+      <img src="Image-Icons/Dashboard2.png" alt="Power BI  Dashboard Screenshot"width="100%" height="auto">
+    </div>
+  </section>
+
+  <section id="skills">
+    <h2>Skills</h2>
+    <div class="skills">
+      <span>SQL Server</span><span>MySQL</span><span>Python</span>
+      <span>Tableau</span><span>Power BI</span><span>HTML/CSS/JS</span>
+      <span>PHP</span><span>Git</span>
+       <span>Python</span> <span>Pandas</span> <span>Numpy</span>
+        <span>Excel</span> <span>Excel Functions</span> <span>PivotTable</span>
+        <span>Statics</span>
+    </div>
+  </section>
+
+  <section id="resume">
+    <h2>Resume</h2>
+    <a href="https://github.com/Debabrata-009/Portfolio/blob/main/Portfolio/Resume.pdf" target="_blank"><button>Download Resume</button></a>
+  </section>
+
+  <section id="Education">
+  <h2>🎓 Education</h2>
+
+  <div class="edu-item">
+    <h3>Bachelor of Technology (B.Tech)</h3>
+    <p class="edu-institute"> GIET University</p>
+    <p class="edu-duration">2021 – 2025</p>
+    <p class="edu-details">
+      Specialization: Computer Science / Data Analytics<br>
+      CGPA: 7.18 / 10
+    </p>
+  </div>
+
+  <div class="edu-item">
+    <h3>Higher Secondary (12th)</h3>
+    <p class="edu-institute">Aims Higher Secondary School, Council Of Higher Education, Odisha</p>
+    <p class="edu-duration">2019 – 2021</p>
+    <p class="edu-details">
+      Stream: Science | Percentage: 75%
+    </p>
+  </div>
+</section>
+
+
+  <footer>
+    <p>&copy; 2026 Debabrata Sahu | Portfolio</p>
+    <section id="contact">
+    <div class="contact-icons">
+  <a href="mailto:debabratasahu282@gmail.com">
+    <img src="Image-Icons/mail.jpg" alt="Email">
+  </a>
+
+  <a href="https://github.com/Debabrata-009" target="_blank">
+    <img src="Image-Icons/Github.png" alt="GitHub">
+  </a>
+
+  <a href="https://linkedin.com" target="_blank">
+    <img src="Image-Icons/Linkdin.jpg" alt="LinkedIn">
+  </a>
+</div>
+
+     </section>
+
+ <nav>
+    <a href="#about">About</a>
+    <a href="#projects">Projects</a>
+    <a href="#skills">Skills</a>
+    <a href="#resume">Resume</a>
+    <a href="#contact">Contact</a>
+    <a href="#Education">Education</a>
+  </nav>
+
+  </footer>
+</body>
+</html>
