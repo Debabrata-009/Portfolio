@@ -39,6 +39,11 @@
    .edu-details {  margin-top: 0.5rem;  line-height: 1.5;color: white}
    #education a{ color: #ffffff;  text-decoration: none; }
    #education a:hover { color: #00d4ff;}
+   .slider {width: 600px;height: 440px; overflow: hidden;margin: auto;border: 2px solid #ccc;border-radius: 10px; }
+   .slides { display: flex; transition: transform 0.5s ease-in-out;}
+   .slide { flex: 0 0 600px; text-align: center; }
+   .slide img {width: 600px;height: 400px;  object-fit: contain;  display: block;  margin: auto;}
+   .slide p {margin: 8px 0 0;font-size: 16px;font-weight: bold;color:white;}
  </style>
 </head>
 <body>
@@ -76,6 +81,7 @@
     <a href="#resume">Resume</a>
     <a href="#contact">Contact</a>
     <a href="#Education">Education</a>
+    <a href="#Certification">Certification</a>
   </nav>
 
   <section id="about">
@@ -166,6 +172,40 @@ contribute as a data analyst.</p>
   </div>
 </section>
 
+   <section id="Certification">
+    <h2 style="text-align:center;">My Certifications</h2>
+    <div class="slider">
+     <div class="slides" id="slides">
+      <div class="slide">
+       <img src="Certification1.jpeg" alt="Certification 1">
+       <p>Data Analytics Course– Naresh I Techonology</p>
+    </div>
+    <div class="slide">
+      <img src="Certification2.jpg" alt="Certification 2">
+      <p>Data Analytics Job Simulation – Deloitte</p>
+    </div>
+    <div class="slide">
+      <img src="Certification3.jpg" alt="Certification 3">
+      <p>Full Stack WebDevelopment - Acmegrade </p>
+    </div>
+  </div>
+</div>
+</section>
+
+<script>
+    const slides = document.getElementById("slides");
+    const totalSlides = slides.children.length;
+    let slideIndex = 0;
+
+    setInterval(() => {
+      slideIndex++;
+      if (slideIndex >= totalSlides) {
+        slideIndex = 0; 
+      }
+      slides.style.transform = `translateX(-${slideIndex * 600}px)`;
+    }, 3000);
+
+  </script>
 
   <footer>
     <p>&copy; 2026 Debabrata Sahu | Portfolio</p>
@@ -193,6 +233,7 @@ contribute as a data analyst.</p>
     <a href="#resume">Resume</a>
     <a href="#contact">Contact</a>
     <a href="#Education">Education</a>
+    <a href="#Certification">Certification</a>
   </nav>
 
   </footer>
